@@ -1,7 +1,1 @@
-Heres some random text 
-
-This is amazing
-
-right?
-
-:)
+A simple application made with Node.js, Express.js and mongoDB.
