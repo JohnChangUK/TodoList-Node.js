@@ -14,13 +14,7 @@
         letter-spacing: 2px;
         text-align: center;
       }
-      h2 {
-        font-size: 30px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        text-align: center;
-      }
-      p, li{
+      p{
         font-size: 16px;
         text-align: center;
       }
@@ -30,16 +24,9 @@
 
   <body>
   <% include partials/nav.ejs %>
-  
-  <h1>Welcome to the profile of <%= person %> </h1>
-  <p><strong>Age: <%= data.age %> </strong></p>
-  <p><strong>Age: <%= data.job %> </strong></p>
-  <h2>Hobbies</h2>
-  <ul>
-  <% data.hobbies.forEach(function(item) { %>
-      <li><%= item %></li>
-  <% }) %>
-  </ul>
+   
+  <h1>Welcome, this is John creating an application with Node.js</h1>
+  <p>Other technologies include express.js and mongoDB </p>
   </body>
 
   </html>
