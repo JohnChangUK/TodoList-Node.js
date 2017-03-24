@@ -1,0 +1,22 @@
+{
+  "name": "john",
+  "version": "1.0.0",
+  "description": "A simple application made with Node.js, Express.js and mongoDB.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnChangUK/TodoList-Node.js.git"
+  },
+  "author": "John Chang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnChangUK/TodoList-Node.js/issues"
+  },
+  "homepage": "https://github.com/JohnChangUK/TodoList-Node.js#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}

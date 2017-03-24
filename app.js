@@ -24,7 +24,7 @@ var server = http.createServer(function(req, res) {
       res.end(JSON.stringify(makers));
     } else {
       res.writeHead(404, {'Content-Type': 'text/html'});
-      
+      fs.createReadStream(__dirname + '/404.html').pipe(res);
     }
   });
 
