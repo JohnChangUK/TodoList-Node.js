@@ -12,7 +12,7 @@ app.get('/contact', function(req, res) {
 });
 
 app.get('/profile/:name', function(req, res) {
-  var data = {age: 31, job: "Joe"}
+  var data = {age: 31, job: "Joe", hobbies: ['eating', 'coding', 'fishing']}
   res.render('profile', {
     person: req.params.name,
     data: data

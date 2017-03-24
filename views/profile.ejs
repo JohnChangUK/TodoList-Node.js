@@ -14,7 +14,13 @@
         letter-spacing: 2px;
         text-align: center;
       }
-      p{
+      h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+      p, li{
         font-size: 16px;
         text-align: center;
       }
@@ -26,6 +32,12 @@
   <h1>Welcome to the profile of <%= person %> </h1>
   <p><strong>Age: <%= data.age %> </strong></p>
   <p><strong>Age: <%= data.job %> </strong></p>
+  <h2>Hobbies</h2>
+  <ul>
+  <% data.hobbies.forEach(function(item) { %>
+      <li><%= item %></li>
+  <% }) %>
+  </ul>
   </body>
 
   </html>
