@@ -1,4 +1,13 @@
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+
+//Connect to the mLab database / mongoose 
+mongoose.connect('mongodb://todo:todo@ds143000.mlab.com:43000/todolist');
+
+//Create a database schema - this is like a Blueprint
+var todoSchema = new mongoose.Schema({ 
+    item: String
+  });
 
 var data = [
   {item: 'Create an app with React.js'},
