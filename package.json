@@ -1,8 +1,14 @@
 {
-  "name": "john",
+  "name": "todolist",
   "version": "1.0.0",
-  "description": "A simple application made with Node.js, Express.js and mongoDB.",
+  "description": "a simple todo app",
   "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,9 +21,5 @@
   "bugs": {
     "url": "https://github.com/JohnChangUK/TodoList-Node.js/issues"
   },
-  "homepage": "https://github.com/JohnChangUK/TodoList-Node.js#readme",
-  "dependencies": {
-    "ejs": "^2.5.6",
-    "express": "^4.15.2"
-  }
+  "homepage": "https://github.com/JohnChangUK/TodoList-Node.js#readme"
 }
