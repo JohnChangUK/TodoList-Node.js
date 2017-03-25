@@ -4,10 +4,18 @@ var mongoose = require('mongoose');
 //Connect to the mLab database / mongoose 
 mongoose.connect('mongodb://todo:todo@ds143000.mlab.com:43000/todolist');
 
+mongoose.Promise = global.Promise;
+
 //Create a database schema - this is like a Blueprint
 var todoSchema = new mongoose.Schema({ 
     item: String
   });
+
+var Todo = mongoose.model('Todo', todoSchema);
+var itemOne = Todo({ item: "Deploy a React.js App" }).save(function(err) {
+  if (err) throw err;
+  console.log('item saved');
+});
 
 var data = [
   {item: 'Create an app with React.js'},
